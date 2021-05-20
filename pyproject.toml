@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ctff-python-example"
+version = "0.1.0"
+description = ""
+authors = ["Nicolai Willems <nicwi@yousee.dk>"]
+license = "MIT"
+packages = [
+  { include = "app", from = "src" },
+  { include = "ctff", from = "src" }
+]
+include = ["poetry.lock"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.65.1"
+uvicorn = "^0.13.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
